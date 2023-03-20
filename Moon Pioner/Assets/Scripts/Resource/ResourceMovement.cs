@@ -44,7 +44,7 @@ public class ResourceMovement : MonoBehaviour
     // Перемещение ресурса от одной точки к другой
     public void MoveResource(GameObject start, GameObject end, bool Untagged)
     {
-        if(end.transform.childCount >= end.GetComponent<ChildCount>().maxChildCount)
+        if(end.transform.childCount >= end.GetComponent<ChildCount>().SetMaxChildCount())
         {
           return;
         }

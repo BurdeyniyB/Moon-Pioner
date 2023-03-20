@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 38317968}
   - component: {fileID: 38317967}
   - component: {fileID: 38317966}
+  - component: {fileID: 38317971}
   m_Layer: 0
   m_Name: Spawn zone
   m_TagString: Untagged
@@ -173,6 +174,7 @@ MonoBehaviour:
   parentObject: {fileID: 38317965}
   maxChildCount: 5
   textMeshPro: {fileID: 789946235}
+  SetZone: 0
 --- !u!114 &38317967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,6 +255,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 38317964}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &38317971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38317964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f15d0846d44274191fa858b6630bac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentObject:
+  - {fileID: 488467718}
 --- !u!1 &82947898
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,6 +613,7 @@ MonoBehaviour:
   parentObject: {fileID: 187259665}
   maxChildCount: 4
   textMeshPro: {fileID: 408632443}
+  SetZone: 1
 --- !u!114 &187259662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1055,6 +1072,7 @@ GameObject:
   - component: {fileID: 395983582}
   - component: {fileID: 395983581}
   - component: {fileID: 395983580}
+  - component: {fileID: 395983586}
   m_Layer: 0
   m_Name: Spawn zone
   m_TagString: Untagged
@@ -1077,6 +1095,7 @@ MonoBehaviour:
   parentObject: {fileID: 395983585}
   maxChildCount: 10
   textMeshPro: {fileID: 1130933348}
+  SetZone: 0
 --- !u!114 &395983581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1171,6 +1190,21 @@ Transform:
   m_Father: {fileID: 1833464632}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &395983586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395983579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f15d0846d44274191fa858b6630bac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentObject:
+  - {fileID: 187259665}
+  - {fileID: 1295833016}
 --- !u!114 &408632443 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8826951188373879223, guid: a4f5382075c2df84d88b0be5946f8a5d,
@@ -1329,6 +1363,7 @@ MonoBehaviour:
   parentObject: {fileID: 488467718}
   maxChildCount: 4
   textMeshPro: {fileID: 639884152}
+  SetZone: 1
 --- !u!1001 &519637730
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2019,6 +2054,7 @@ MonoBehaviour:
   parentObject: {fileID: 950002046}
   maxChildCount: 10
   textMeshPro: {fileID: 812772469}
+  SetZone: 1
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2374,6 +2410,7 @@ MonoBehaviour:
   parentObject: {fileID: 1228623598}
   maxChildCount: 5
   textMeshPro: {fileID: 1231343545}
+  SetZone: 1
 --- !u!114 &1231343545 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8826951188373879223, guid: a4f5382075c2df84d88b0be5946f8a5d,
@@ -2503,7 +2540,7 @@ MonoBehaviour:
   parentObjectStack1: {fileID: 488467717}
   parentObjectStack2: {fileID: 38317964}
   creationInterval: 1
-  maxObjects: 4
+  maxObjects: 5
   childObjectsStack1: []
   childObjectsStack2: []
 --- !u!1 &1295833015
@@ -2521,6 +2558,7 @@ GameObject:
   - component: {fileID: 1295833019}
   - component: {fileID: 1295833018}
   - component: {fileID: 1295833017}
+  - component: {fileID: 1295833023}
   m_Layer: 0
   m_Name: "Set zone Resour\u0441e2"
   m_TagString: Untagged
@@ -2588,6 +2626,7 @@ MonoBehaviour:
   parentObject: {fileID: 1295833016}
   maxChildCount: 4
   textMeshPro: {fileID: 2014473471}
+  SetZone: 1
 --- !u!114 &1295833020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2652,6 +2691,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1295833015}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1295833023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295833015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f15d0846d44274191fa858b6630bac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentObject: []
 --- !u!224 &1509431974 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8170153791668043268, guid: 0d230cc8be529a542a08cb878ab14b18,
